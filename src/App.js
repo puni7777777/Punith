@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+// import './App.css';
+import Login from './components/Login';
+import Navbar from './components/Navbar';
+import TextHandleCard from './components/TextHandleCard';
+import Footer from './components/Footer';
+import Search from './components/Search';
+import ContactUs from './components/Contact';
 
-function App() {
+
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar title="Punith" />
+      {/* <Search /> */}
+      {/* <Login /> */}
+      <div className='container my-3'>
+        <TextHandleCard heading="Enter text to change" />
+      </div>
+      <ContactUs />
+      <Footer />
+    </>
   );
 }
 

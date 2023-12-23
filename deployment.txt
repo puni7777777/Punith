@@ -1,0 +1,37 @@
+Add a homepage property to the package.json file
+
+    Open the package.json file in a text editor.
+
+{
+  "name": "my-app",
+  "version": "0.1.0",
++ "homepage": "https://gitname.github.io/react-gh-pages",
+  "private": true,
+
+Add a predeploy property and a deploy property to the scripts object:
+
+"scripts": {
++   "predeploy": "npm run build",
++   "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+
+ Add a "remote" that points to the GitHub repository
+
+    Add a "remote" to the local Git repository.
+
+    You can do that by issuing a command in this format:
+
+    $ git remote add origin https://github.com/{username}/{repo-name}.git
+
+Push the React app to the GitHub repository
+
+    Push the React app to the GitHub repository
+
+    $ npm run deploy
+
+
+    You can specify a custom commit message via the -m option, like this:
+
+    $ npm run deploy -- -m "Deploy React app to GitHub Pages"
+
