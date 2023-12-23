@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 export default function ContactUs() {
-    const [sent, setSent] = useState('Send Email')
+    const [sent, setSent] = useState('Send')
     const [disabling, setDisabling] = useState(true)
     const [user, setUser] = useState('');
     const [mail, setMail] = useState('');
@@ -51,25 +51,25 @@ export default function ContactUs() {
                 <input type="submit" value="Submit" />
             </form> */}
 
-            <div className='d-flex justify-content-center'>
+            <div className='d-flex justify-content-center align-content-start'>
                 <form id="form" className='mw-50'>
                     <div className='row px-5 gap-3'>
-                        <div className="d-flex justify-content-start gap-3">
+                        <div className="d-flex justify-content-start gap-3 flex-wrap">
                             <label htmlFor="from_name">Name*</label>
                             <input type="text" name="from_name" id="from_name" className='form-control' onChange={userChange}
                                 value={user} required />
                         </div>
-                        <div className="d-flex justify-content-start gap-3">
+                        <div className="d-flex justify-content-start gap-3 flex-wrap">
                             <label htmlFor="reply_to">E-mail*</label>
                             <input type="text" name="reply_to" id="reply_to" className='form-control' onChange={mailChange}
                                 value={mail} required />
                         </div>
-                        <div className="d-flex justify-content-start gap-3">
+                        <div className="d-flex justify-content-start gap-3 flex-wrap">
                             <label htmlFor="message">Message*</label>
                             <input type="text" name="message" id="message" className='form-control' onChange={msgChange}
                                 value={userMsg} required />
                         </div>
-                        <div className='d-flex justify-content-center align-center mw-100' >
+                        <div className='d-flex justify-content-center align-content-center mw-100' >
                             <input type="submit" value={sent} className='btn btn-primary w-25' id='button' onClick={sendEmail} disabled={!disabling} />
                         </div>
                     </div>

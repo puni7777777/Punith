@@ -4,14 +4,25 @@ import texthandle from './pics/Texthandle.png'
 
 export default function TextHandleCard(props) {
     return (
-        <div className="card border border-warning" style={{ width: '18rem' }}>
-            <a href="https://puni7777777.github.io/texthandle/" target='_blank' className="btn btn-outline-warning">
-                <img className="card-img-top" src={texthandle} alt="Card image" />
-                <div className="card-body">
-                    <h5 className="card-title">Texthandle</h5>
-                    <p className="card-text">This is a tool to manipulate text online such as to remove breaks in lines or to add breaks to form points</p>
-                </div>
-            </a>
+        <div className="d-flex justify-content-center gap-4 flex-wrap" >
+            <div className="card border border-warning" style={{ width: '18rem' }}>
+                <a href="https://puni7777777.github.io/texthandle/" target='_blank' className="btn btn-outline-warning">
+                    <img className="card-img-top" src={texthandle} alt="Card image" />
+                    <div className="card-body">
+                        <h5 className="card-title">Texthandle</h5>
+                        <p className="card-text">This is a tool to manipulate text online such as to remove breaks in lines or to add breaks to form points</p>
+                    </div>
+                </a>
+            </div>
+            {/* <div className="card border border-warning d-flex justify-content-center" style={{ width: '18rem' }}>
+                <a href="https://puni7777777.github.io/texthandle/" target='_blank' className="btn btn-outline-warning">
+                    <img className="card-img-top" src={texthandle} alt="Card image" />
+                    <div className="card-body">
+                        <h5 className="card-title">Texthandle</h5>
+                        <p className="card-text">This is a tool to manipulate text online such as to remove breaks in lines or to add breaks to form points</p>
+                    </div>
+                </a>
+            </div> */}
         </div>
     )
 }

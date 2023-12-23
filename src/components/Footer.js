@@ -37,10 +37,10 @@ export default function Footer() {
             <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>
                 <MDBIcon icon="gem" className="me-3" />
-                TextHandle
+                {/* # */}
               </h6>
               <p>
-                This is a tool to manipulate text in the way u want. use it as intended.
+                Here you can find useful tools. for any suggestions or queries please contact Me.
               </p>
             </MDBCol>
 
