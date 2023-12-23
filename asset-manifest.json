@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Punith/static/css/main.6a398d90.css",
+    "main.js": "/Punith/static/js/main.631259b4.js",
+    "static/js/651.269ba0e1.chunk.js": "/Punith/static/js/651.269ba0e1.chunk.js",
+    "index.html": "/Punith/index.html",
+    "main.6a398d90.css.map": "/Punith/static/css/main.6a398d90.css.map",
+    "main.631259b4.js.map": "/Punith/static/js/main.631259b4.js.map",
+    "651.269ba0e1.chunk.js.map": "/Punith/static/js/651.269ba0e1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a398d90.css",
+    "static/js/main.631259b4.js"
+  ]
+}
